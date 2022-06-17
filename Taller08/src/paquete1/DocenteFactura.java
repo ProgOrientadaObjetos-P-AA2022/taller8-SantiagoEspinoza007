@@ -25,7 +25,7 @@ public class DocenteFactura extends Docente {
     }
     public void calcularValorCancelar(){
         
-        valor_Cancelar = valor_Factura + (valor_Factura * valor_ivaD);
+        valor_Cancelar = valor_Factura - ((valor_Factura * valor_ivaD)/100);
         
     }
     public double obtenerValorFactura(){
